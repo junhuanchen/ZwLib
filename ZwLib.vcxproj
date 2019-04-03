@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6CCD044-B17F-46D7-B62A-9F1BE9B5DE83}</ProjectGuid>
+    <RootNamespace>ZwLib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>DAVE_LITTLE_ENDIAN;INFO_OUT;WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithm\AES\Aes.h" />
+    <ClInclude Include="Algorithm\BaseSeven\BaseSeven.h" />
+    <ClInclude Include="Algorithm\Buddy\Buddy.h" />
+    <ClInclude Include="Algorithm\CRC\Crc.h" />
+    <ClInclude Include="Algorithm\Crypt.h" />
+    <ClInclude Include="Algorithm\ECC\Ecc.h" />
+    <ClInclude Include="Algorithm\INI\property.h" />
+    <ClInclude Include="Algorithm\INI\StructIni.h" />
+    <ClInclude Include="Algorithm\Padding\Padding.h" />
+    <ClInclude Include="Algorithm\RSA\Rsa.h" />
+    <ClInclude Include="Algorithm\SHA1\SHA1.h" />
+    <ClInclude Include="FrameWork\Core\ZwCache.h" />
+    <ClInclude Include="FrameWork\Core\ZwCtrl.h" />
+    <ClInclude Include="FrameWork\Core\ZwData.h" />
+    <ClInclude Include="FrameWork\Core\ZwMemory.h" />
+    <ClInclude Include="FrameWork\Core\ZwParse.h" />
+    <ClInclude Include="FrameWork\Core\ZwMachine.h" />
+    <ClInclude Include="FrameWork\Core\ZwMachine.hpp" />
+    <ClInclude Include="FrameWork\Core\ZwTransit.h" />
+    <ClInclude Include="FrameWork\DataInterface\Ado\ado2.h" />
+    <ClInclude Include="FrameWork\DataInterface\Ado\ZwAdoMsSql.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\IoCp.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\IoData.h" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\TcpClient.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\Mem\Mem.h" />
+    <ClInclude Include="FrameWork\DataInterface\Sensor\DHT11.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\Dave.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DaveDataSource.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DaveInterface.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DavePDU.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\Log.h" />
+    <ClInclude Include="FrameWork\DataInterface\Tdp\Tdp.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\Usart\ZwSpy.h" />
+    <ClInclude Include="FrameWork\DataInterface\Usb\UsbHid.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinTdpToSql.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinTran.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinUsbToTdp.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinUsbToUdp.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbCoordinator.h" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbEndDevice.h" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbTran.h" />
+    <ClInclude Include="FrameWork\FrameWork.hpp" />
+    <ClInclude Include="FrameWork\HardWare.h" />
+    <ClInclude Include="Struct\List\ListOneWay.h" />
+    <ClInclude Include="ZwLib.hpp" />
+    <ClInclude Include="Struct\Map\Map.h" />
+    <ClInclude Include="Struct\Node\NodeOneWay.h" />
+    <ClInclude Include="Struct\Node\NodeTwoWay.h" />
+    <ClInclude Include="Struct\Pool\PoolStatic.h" />
+    <ClInclude Include="Struct\Queue\QueueArray.h" />
+    <ClInclude Include="Struct\Queue\QueueList.h" />
+    <ClInclude Include="Struct\Queue\QueueList.hpp" />
+    <ClInclude Include="Struct\Struct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithm\AES\Aes.c" />
+    <ClCompile Include="Algorithm\BaseSeven\BaseSeven.c" />
+    <ClCompile Include="Algorithm\Buddy\Buddy.c" />
+    <ClCompile Include="Algorithm\CRC\Crc.c" />
+    <ClCompile Include="Algorithm\ECC\Ecc.c" />
+    <ClCompile Include="Algorithm\INI\property.c" />
+    <ClCompile Include="Algorithm\Padding\Padding.c" />
+    <ClCompile Include="Algorithm\RSA\Rsa.c" />
+    <ClCompile Include="Algorithm\SHA1\SHA1.c" />
+    <ClCompile Include="FrameWork\Core\ZwCache.c" />
+    <ClCompile Include="FrameWork\Core\ZwConfig.c" />
+    <ClCompile Include="FrameWork\Core\ZwCtrl.c" />
+    <ClCompile Include="FrameWork\Core\ZwData.c" />
+    <ClCompile Include="FrameWork\Core\ZwMemory.c" />
+    <ClCompile Include="FrameWork\Core\ZwParse.c" />
+    <ClCompile Include="FrameWork\Core\ZwTransit.c" />
+    <ClCompile Include="FrameWork\DataInterface\Ado\ado2.cpp" />
+    <ClCompile Include="FrameWork\DataInterface\IoCp\IoCp.cpp" />
+    <ClCompile Include="FrameWork\DataInterface\Mem\Mem.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\Dave.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveDataSource.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveDtSrcIntfc.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveInterface.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DavePDU.c" />
+    <ClCompile Include="FrameWork\DataInterface\Usart\ZwSpy.c" />
+    <ClCompile Include="FrameWork\DataTransfer\ZgbCoordinator.c" />
+    <ClCompile Include="FrameWork\DataTransfer\ZgbEndDevice.c" />
+    <ClCompile Include="Struct\List\ListTwoWay.c" />
+    <ClCompile Include="Struct\Map\Map.c" />
+    <ClCompile Include="Struct\Queue\QueueArray.c" />
+    <ClCompile Include="Struct\Queue\QueueList.c" />
+    <ClCompile Include="ZwLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ZwLib.Doxyfile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+This HIDAPI is applicable to the win32, if you need X64 edition, support under the WINDOWS SDK - By Snail.Chen

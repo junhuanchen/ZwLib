@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Struct\List\ListOneWay.h" />
+    <ClInclude Include="Struct\Node\NodeOneWay.h" />
+    <ClInclude Include="Struct\Node\NodeTwoWay.h" />
+    <ClInclude Include="Struct\Struct.h" />
+    <ClInclude Include="Struct\Map\Map.h" />
+    <ClInclude Include="Struct\Pool\PoolStatic.h" />
+    <ClInclude Include="Struct\Queue\QueueList.hpp" />
+    <ClInclude Include="Struct\Queue\QueueList.h" />
+    <ClInclude Include="Struct\Queue\QueueArray.h" />
+    <ClInclude Include="ZwLib.hpp" />
+    <ClInclude Include="Algorithm\AES\Aes.h" />
+    <ClInclude Include="Algorithm\BaseSeven\BaseSeven.h" />
+    <ClInclude Include="Algorithm\Buddy\Buddy.h" />
+    <ClInclude Include="Algorithm\CRC\Crc.h" />
+    <ClInclude Include="Algorithm\ECC\Ecc.h" />
+    <ClInclude Include="Algorithm\INI\property.h" />
+    <ClInclude Include="Algorithm\INI\StructIni.h" />
+    <ClInclude Include="Algorithm\Padding\Padding.h" />
+    <ClInclude Include="Algorithm\RSA\Rsa.h" />
+    <ClInclude Include="Algorithm\SHA1\SHA1.h" />
+    <ClInclude Include="Algorithm\Crypt.h" />
+    <ClInclude Include="FrameWork\Core\ZwCache.h" />
+    <ClInclude Include="FrameWork\Core\ZwData.h" />
+    <ClInclude Include="FrameWork\Core\ZwTransit.h" />
+    <ClInclude Include="FrameWork\Core\ZwMemory.h" />
+    <ClInclude Include="FrameWork\Core\ZwCtrl.h" />
+    <ClInclude Include="FrameWork\Core\ZwParse.h" />
+    <ClInclude Include="FrameWork\DataInterface\Ado\ado2.h" />
+    <ClInclude Include="FrameWork\DataInterface\Ado\ZwAdoMsSql.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\IoCp.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\IoData.h" />
+    <ClInclude Include="FrameWork\DataInterface\IoCp\TcpClient.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\Mem\Mem.h" />
+    <ClInclude Include="FrameWork\DataInterface\Sensor\DHT11.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\Dave.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DaveDataSource.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DaveInterface.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\DavePDU.h" />
+    <ClInclude Include="FrameWork\DataInterface\Siemens\Log.h" />
+    <ClInclude Include="FrameWork\DataInterface\Tdp\Tdp.hpp" />
+    <ClInclude Include="FrameWork\DataInterface\Usart\ZwSpy.h" />
+    <ClInclude Include="FrameWork\DataInterface\Usb\UsbHid.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinTdpToSql.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinTran.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbCoordinator.h" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbEndDevice.h" />
+    <ClInclude Include="FrameWork\DataTransfer\ZgbTran.h" />
+    <ClInclude Include="FrameWork\FrameWork.hpp" />
+    <ClInclude Include="FrameWork\HardWare.h" />
+    <ClInclude Include="FrameWork\DataTransfer\WinUsbToUdp.hpp" />
+    <ClInclude Include="FrameWork\DataTransfer\WinUsbToTdp.hpp" />
+    <ClInclude Include="FrameWork\Core\ZwMachine.h" />
+    <ClInclude Include="FrameWork\Core\ZwMachine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZwLib.cpp" />
+    <ClCompile Include="Struct\List\ListTwoWay.c" />
+    <ClCompile Include="Struct\Map\Map.c" />
+    <ClCompile Include="Struct\Queue\QueueList.c" />
+    <ClCompile Include="Struct\Queue\QueueArray.c" />
+    <ClCompile Include="Algorithm\AES\Aes.c" />
+    <ClCompile Include="Algorithm\BaseSeven\BaseSeven.c" />
+    <ClCompile Include="Algorithm\Buddy\Buddy.c" />
+    <ClCompile Include="Algorithm\CRC\Crc.c" />
+    <ClCompile Include="Algorithm\ECC\Ecc.c" />
+    <ClCompile Include="Algorithm\INI\property.c" />
+    <ClCompile Include="Algorithm\Padding\Padding.c" />
+    <ClCompile Include="Algorithm\RSA\Rsa.c" />
+    <ClCompile Include="Algorithm\SHA1\SHA1.c" />
+    <ClCompile Include="FrameWork\Core\ZwCache.c" />
+    <ClCompile Include="FrameWork\Core\ZwData.c" />
+    <ClCompile Include="FrameWork\Core\ZwTransit.c" />
+    <ClCompile Include="FrameWork\Core\ZwMemory.c" />
+    <ClCompile Include="FrameWork\Core\ZwCtrl.c" />
+    <ClCompile Include="FrameWork\Core\ZwParse.c" />
+    <ClCompile Include="FrameWork\Core\ZwConfig.c" />
+    <ClCompile Include="FrameWork\DataInterface\Ado\ado2.cpp" />
+    <ClCompile Include="FrameWork\DataInterface\IoCp\IoCp.cpp" />
+    <ClCompile Include="FrameWork\DataInterface\Mem\Mem.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\Dave.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveDataSource.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveDtSrcIntfc.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DaveInterface.c" />
+    <ClCompile Include="FrameWork\DataInterface\Siemens\DavePDU.c" />
+    <ClCompile Include="FrameWork\DataInterface\Usart\ZwSpy.c" />
+    <ClCompile Include="FrameWork\DataTransfer\ZgbCoordinator.c" />
+    <ClCompile Include="FrameWork\DataTransfer\ZgbEndDevice.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ZwLib.Doxyfile" />
+  </ItemGroup>
+</Project>
